@@ -24,10 +24,10 @@ public class CustomLinearItemDecoration extends AbsGroupedLinearItemDecoration {
     public CustomLinearItemDecoration(Context context, GroupedRecyclerViewAdapter adapter) {
         super(adapter);
 
-        headerDivider = context.getResources().getDrawable(R.drawable.green_divider);
-        footerDivider = context.getResources().getDrawable(R.drawable.blue_divider);
-        childDivider1 = context.getResources().getDrawable(R.drawable.red_divider);
-        childDivider2 = context.getResources().getDrawable(R.drawable.purple_divider);
+        headerDivider = context.getResources().getDrawable(R.drawable.top_green_divider);
+        footerDivider = context.getResources().getDrawable(R.drawable.top_blue_divider);
+        childDivider1 = context.getResources().getDrawable(R.drawable.top_red_divider);
+        childDivider2 = context.getResources().getDrawable(R.drawable.top_purple_divider);
     }
 
     @Override

@@ -13,6 +13,17 @@
     <color name="pink_500">#ffe89abe</color>
     <color name="pink_200">#ffeed9e4</color>
 
+    <color name="blue_700">#FF365A9E</color>
+    <color name="blue_500">#FF3E6DDA</color>
+    <color name="blue_300">#FF019FE7</color>
+    <color name="blue_100">#FF7DC5EB</color>
+
     <color name="green">#FF03DAC5</color>
     <color name="red">#ffff0000</color>
+
+    <color name="bg_gray">#ffe6e6e6</color>
+    <color name="bg_midgray">#fff5f5f5</color>
+    <color name="gray">#FF999393</color>
+    <color name="gray_dark">#ff777777</color>
+    <color name="gray_hint">#ffbbbbbb</color>
 </resources>

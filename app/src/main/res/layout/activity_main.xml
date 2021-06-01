@@ -1,49 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:padding="@dimen/padding_16_dp"
+    tools:context=".MainActivity">
 
-    <LinearLayout
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/topGroupBtn"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/blue"
-        android:orientation="horizontal" >
-        <TextView
-            android:id="@+id/tv_change"
-            android:layout_width="wrap_content"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/blue"
-            android:padding="8dp"
-            android:gravity="center"
-            android:text="切换布局"
-            android:textColor="@color/white"
-            android:textSize="16sp" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="分组吸顶效果"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/tv_title"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="RecyclerView吸顶效果"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-
-    </LinearLayout>
-
-    <com.donkingliang.groupedadapter.widget.StickyHeaderLayout
-        android:id="@+id/sticky_layout"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/simpleGroupBtn"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="一般分组效果"
+        app:layout_constraintTop_toBottomOf="@id/topGroupBtn"/>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_list"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
 
-    </com.donkingliang.groupedadapter.widget.StickyHeaderLayout>
-</LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/timeDescGroupBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="按时间降序排列分组效果"
+        app:layout_constraintTop_toBottomOf="@id/simpleGroupBtn"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

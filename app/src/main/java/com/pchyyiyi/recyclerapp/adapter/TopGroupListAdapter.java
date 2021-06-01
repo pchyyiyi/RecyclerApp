@@ -60,17 +60,17 @@ public class TopGroupListAdapter extends GroupedRecyclerViewAdapter {
 
     @Override
     public int getHeaderLayout(int viewType) {
-        return R.layout.item_group_header;
+        return R.layout.item_top_group_header;
     }
 
     @Override
     public int getFooterLayout(int viewType) {
-        return R.layout.item_group_footer;
+        return R.layout.item_top_group_footer;
     }
 
     @Override
     public int getChildLayout(int viewType) {
-        return R.layout.item_group_child;
+        return R.layout.item_top_group_child;
     }
 
     @Override
